@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.app {
+  width: 1440px;
+  max-height: 100vh;
+}
+
+.card {
+  width: 700px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: black;
+  position: relative;
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.2);
+}
+.App-header {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+.desktopImageBundle {
+  float: left;
+  width: 45%;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq {
+  float: left;
+  width: 40%;
+  margin: 40px;
+}
+
+.bgImage {
+  z-index: 1;
+  top: 0;
+  height: 750px;
+  top: -230px;
+  left: -455px;
+  position: relative;
+}
+
+.imageWomanDesk {
+  z-index: 2;
+  left: -70px;
+  top: 40px;
+  height: 290px;
+  position: absolute;
+}
+
+.box {
+  z-index: 3;
+  position: absolute;
+  left: -80px;
+  top: 150px;
+  height: 150px;
+}
+
+.title-text {
+  margin-left: 0;
+  font-size: 2rem;
+  margin-top: 0;
+  color: hsl(238, 29%, 16%);
+}
+
+.question {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.2rem;
+  color: hsl(237, 12%, 33%);
+}
+
+.answer {
+  display: none;
+  line-height: 1rem;
+  color: hsl(240, 6%, 50%);
+}
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.answer:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.open .answer {
+  display: block;
+  font-size: 12px;
+}
+
+.open .question {
+  font-weight: 700;
+}
+
+.question::after {
+  content: url(./images/icon-arrow-down.svg);
+  float: right;
+}
+
+.open .question::after {
+  transform: rotate(180deg);
+}
+
+/*Mobile styles */
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 500px;
+    width: 340px;
+    margin-top: 50%;
+    transform: translate(0, -10%);
+  }
+
+  .title-text {
+    text-align: center;
+  }
+  .desktopImageBundle {
+    width: 100%;
+    height: 25%;
+    overflow: visible;
+    margin-bottom: 18px;
+  }
+  .bgWrap {
+    overflow: hidden;
+  }
+
+  .faq {
+    overflow: visible;
+    float: none;
+    width: auto;
+  }
+  .bgImage {
+    top: -405px;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.37);
+  }
+  .imageWomanDesk {
+    top: -175px;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.75);
+  }
+  .box {
+    transform: scale(0.65);
+    left: -7px;
+    top: -78px;
+  }
+}
+
+.attribution {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
