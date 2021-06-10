@@ -45,11 +45,11 @@ function App() {
         <div className="card">
           <div className="desktopImageBundle">
             <div className="bgWrap">
-              <img className="bgImage" src={mainImage} />
+              <img className="bgImage" src={mainImage} alt="" />
             </div>
-            <img className="imageWomanDesk" src={womanDesk} />
+            <img className="imageWomanDesk" src={womanDesk} alt="" />
           </div>
-          <img className="box" src={box} />
+          <img className="box" src={box} alt="" />
           <div className="faq">
             <h1 className="title-text">FAQ</h1>
             {faqs.map(({ question, answer }, index) => (
@@ -69,7 +69,11 @@ function App() {
       </header>
       <div className="attribution">
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
           Frontend Mentor
         </a>
         . Coded by <a href="https://www.reznitek.com/">Evan Reznicek</a>.
