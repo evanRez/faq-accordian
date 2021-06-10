@@ -123,4 +123,4 @@ I would be interested in trying to do this without using react/js as the bonus s
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-big thanks to efecollins for help / reference for css solution.
+big thanks to Evbowe Efosa Collins for help / reference for css solution.

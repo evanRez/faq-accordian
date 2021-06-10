@@ -135,6 +135,7 @@ body {
   }
   .bgWrap {
     overflow: hidden;
+    visibility: hidden;
   }
 
   .faq {
